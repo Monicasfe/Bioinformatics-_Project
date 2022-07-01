@@ -1,6 +1,6 @@
 # Bioinformatics-_Project
 
-This repository contains the source code and the results from my Bioinformatics Projects, durin the Masters degree.
+This repository contains the source code and the results from my Bioinformatics Projects, developed in Python, during the Masters degree.
 
 In here it possible to find fucntions that allow to:
 
@@ -19,3 +19,6 @@ In here it possible to find fucntions that allow to:
   __-->__ Draw cladrograms from _.aln_ --> _.nex_ files.
   
   __-->__ Identify SNP from _.vcf_ files.
+  
+  
+__Script__ files are located inside the ___Scripts___ folder.
