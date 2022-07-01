@@ -4,16 +4,18 @@ This repository contains the source code and the results from my Bioinformatics 
 
 In here it possible to find fucntions that allow to:
 
-  __-->__ Generate staphylococcus pahges datasets (however these functions can be changed in order to generate datasets for other organims). 
+  __-->__ Generate staphylococcus pahges datasets in _.csv_ format (however these functions can be changed in order to generate datasets for other organims). 
   
-  --> Find specific proteins inside the genome and generate .txt files conatining the genomes with the wanted proteins.
+  __-->__ Find specific proteins inside the genome and generate _.txt_ files conatining the genomes with the wanted proteins.
   
-  --> Get the accession genomes that do not have the wanted proteins inseide the previous generated dataset.
+  __-->__ Get the accession genomes that do not have the wanted proteins inseide the previous generated dataset.
   
-  --> Get proteins nucleotide sequences into a .fasta file, based on their id or on their location within the genome.
+  __-->__ Get proteins nucleotide sequences into a _.fasta_ file, based on their id or on their location within the genome.
   
-  --> Performing multi-sequence aligments.
+  __-->__ Performing multi-sequence aligments.
   
-  --> Draw phylogenetic trees from .dnd files.
+  __-->__ Draw phylogenetic trees from .dnd files.
   
-  --> Draw
+  __-->__ Draw cladrograms from _.aln_ --> _.nex_ files.
+  
+  __-->__ Identify SNP from _.vcf_ files.
