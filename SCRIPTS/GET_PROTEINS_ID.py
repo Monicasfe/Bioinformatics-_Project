@@ -104,6 +104,16 @@ def get_proteins_ids__222(txt_files, searching_protein, seach_from_list=False, a
                     for k1, v1 in feature.qualifiers.items():
                         if k1 == "product":
                             if seach_from_list == True:
+                                # for prot in searching_protein:
+                                #     if any(k in pro for pro in prot):
+                                #         if v1[0] in prot:
+                                #             print("------------------------------------", v1[0])
+                                #             seq_protein = get_protein_seq(feature, feature.type)
+                                #             id_protein = get_protein_id(feature, feature.type)
+                                #             if id_protein and seq_protein!= None:
+                                #                 duplicated_prots[id_protein] = len(str(seq_protein))
+                                #         else:
+                                #             print(v1[0])
 
                                 if any(k in pro for pro in searching_protein[i]):
                                     if v1[0] in searching_protein[i]:
