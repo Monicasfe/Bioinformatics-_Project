@@ -1,14 +1,21 @@
 from Bio import Entrez
 from Bio.Seq import Seq
 from numpy import dtype
-from Defs_Auxiliares import *
-from All_csv_func import *
+from SCRIPTS.AUXLILIARY_FUNCTIONS.GENERAL_AUX_FUNCTIONS import *
+from SCRIPTS.AUXLILIARY_FUNCTIONS.AUX_CSV_FUNCTIONS import *
 from Bio import SeqIO
 import http.client
 http.client.HTTPConnection._http_vsn = 10
 http.client.HTTPConnection._http_vsn_str = 'HTTP/1.0'
 
 def get_genome_id_from_name(dataset, csv_name_files, add_to_file_name):
+    """
+    From a given dataset having the accession number and name of all the genomes we are working with it gets teh accession number of the genome based on their name.
+    :param dataset: initial dataset in a csv format, having among other inormation teh accession number and genome name.
+    :param csv_name_files: csv files having the name of the phages from which we want their accession number.
+    :param add_to_file_name: str having a prefix to add to the name of teh output file.
+    :return:
+    """
     df = pd.read_csv(dataset, sep=",", header=0)
 
     print(df.shape)
