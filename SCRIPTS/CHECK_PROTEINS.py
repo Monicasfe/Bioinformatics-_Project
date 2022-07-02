@@ -1,8 +1,7 @@
-from audioop import add
 from Bio import Entrez
 from Bio.Seq import Seq
-from Defs_Auxiliares import *
-from All_csv_func import *
+from SCRIPTS.AUXLILIARY_FUNCTIONS.GENERAL_AUX_FUNCTIONS import *
+from SCRIPTS.AUXLILIARY_FUNCTIONS.AUX_CSV_FUNCTIONS import *
 import time
 import os
 from Bio import SeqIO
