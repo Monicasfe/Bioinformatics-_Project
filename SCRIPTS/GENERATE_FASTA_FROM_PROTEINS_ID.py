@@ -2,8 +2,8 @@ from importlib.resources import path
 from Bio import Entrez
 from Bio.Seq import Seq
 from more_itertools import only
-from Defs_Auxiliares import *
-from All_csv_func import *
+from SCRIPTS.AUXLILIARY_FUNCTIONS.GENERAL_AUX_FUNCTIONS import *
+from SCRIPTS.AUXLILIARY_FUNCTIONS.AUX_CSV_FUNCTIONS import *
 from Bio import SeqIO
 import http.client
 http.client.HTTPConnection._http_vsn = 10
