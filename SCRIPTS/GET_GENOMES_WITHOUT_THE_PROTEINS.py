@@ -1,11 +1,17 @@
-from audioop import add
-from Defs_Auxiliares import *
-from All_csv_func import *
+from SCRIPTS.AUXLILIARY_FUNCTIONS.GENERAL_AUX_FUNCTIONS import *
+from SCRIPTS.AUXLILIARY_FUNCTIONS.AUX_CSV_FUNCTIONS import *
 import os
 import pandas as pd
 
 
 def select_genomes_no_prots(dataset, txt_files, add_to_file_name=None):
+    """
+    Selects teh genomes that do not have the wanted proteins by using the base dataset, having all the initial phages, and txt files with the genomes with the proetins we want. works by excluding from the base dataset the accession number that already exist in the txt files of the genomes having the wanted proteins.
+    :param dataset: initial dataset, in a csv file, containing all the phages that we are using.
+    :param txt_files: txt filesh aving the accession number of the genomes already identified that they have the wanted proteins.
+    :param add_to_file_name: str with a prefix to add to the output file. By default is None.
+    :return:
+    """
     df = pd.read_csv(dataset, sep=",", header=0)
     ids = list(df["Accession_Number"])
     proteins_dict = {}
