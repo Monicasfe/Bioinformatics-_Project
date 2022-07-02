@@ -1,8 +1,15 @@
 import re
 import numpy as np
-from Defs_Auxiliares import *
+from SCRIPTS.AUXLILIARY_FUNCTIONS.GENERAL_AUX_FUNCTIONS import *
 
 def arrange_aln_files_to_fasta_style(aln_files, add_to_file_name=None, path_files=None):
+    """
+    Converts an alignment file sln structure to on alignment file with the stucture of a fasta file.
+    :param aln_files: list with the aln files to convert.
+    :param add_to_file_name: prefix to add to the output file name.
+    :param path_files: path to wher eteh output files should be saved, By default is None, meaning that the output file will be saved in te corrent folder
+    :return:
+    """
     
     for i in range(len(aln_files)):
         with open(aln_files[i], "r") as f:
@@ -18,42 +25,6 @@ def arrange_aln_files_to_fasta_style(aln_files, add_to_file_name=None, path_file
                 else:
                     print("esta merda existe", line)
             lines = lines[1:]
-            # print(lines)
-
-            # lines = lines[3:]
-            # print(len(lines))
-            # print(lines[-2])
-            # for j in range(len(lines)):
-            #     if len(lines) == 0:
-            #         break
-            #     else:
-            #         print(len(lines))
-            #         print(lines)
-            #         j = j-j
-            #         seq = []
-            #         # print(lines[j])
-            #         splited = lines[0].split(" ")
-            #         id_number = splited[0]
-            #         seq.append(splited[-1])
-            #         lines.remove(lines[j])
-            #         print(id_number)
-                    
-            #         # for line_3 in lines:
-            #         #     if id_number in line_3.split(" ")[0]:
-                            
-            #         # if any(id_number in x for x in lines):
-            #         idx = [ids for ids, l in enumerate(lines) if id_number in l.split(" ")[0]]
-            #         print(idx)
-            #         for h in idx:
-            #             print(lines[h].split(" ")[0])
-            #             seq.append(lines[h].split(" ")[-1])
-                    
-            #         for g in idx:
-            #             # print(len(lines))
-            #             lines.remove(lines[int(g)])
-                    
-            #         # print(seq)
-            #         aln_dict[id_number] = seq
 
             ids = []
             for line in lines:
