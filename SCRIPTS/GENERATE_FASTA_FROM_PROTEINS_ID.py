@@ -110,11 +110,11 @@ def get_fasta_from_prot_id(txt_files, add_to_file_name=None, all_in_one_file=Tru
     
 
 
-prots_files = ["NEW_NEW_prots_ids_baseplate.txt", "NEW_NEW_prots_ids_tail.txt", "NEW_NEW_prots_ids_fiber.txt", "NEW_NEW_prots_ids_sheath.txt"]
-
-paths = ["nt_fasta_sequences/Baseplate", "nt_fasta_sequences/Tail", "nt_fasta_sequences/Tail_fiber", "nt_fasta_sequences/Tail_sheath"]
-
-get_fasta_from_prot_id(txt_files=prots_files, add_to_file_name="FASTA_", all_in_one_file=False, path_files=paths)
+# prots_files = ["NEW_NEW_prots_ids_baseplate.txt", "NEW_NEW_prots_ids_tail.txt", "NEW_NEW_prots_ids_fiber.txt", "NEW_NEW_prots_ids_sheath.txt"]
+#
+# paths = ["nt_fasta_sequences/Baseplate", "nt_fasta_sequences/Tail", "nt_fasta_sequences/Tail_fiber", "nt_fasta_sequences/Tail_sheath"]
+#
+# get_fasta_from_prot_id(txt_files=prots_files, add_to_file_name="FASTA_", all_in_one_file=False, path_files=paths)
 
 
 def get_fasta_from_prot_location(csv_files, add_to_file_name=None, all_in_one_file=True, path_files=None):
@@ -199,6 +199,6 @@ def get_fasta_from_prot_location(csv_files, add_to_file_name=None, all_in_one_fi
         else:
             print("One is done")
 
-csv_files = ["selected_homology_baseplate_protein.csv", "selected_homology_tail_protein.csv",  "selected_homology_tail_fiber_protein.csv", "selected_homology_tail_sheath_protein.csv"]
-
-get_fasta_from_prot_location(csv_files, all_in_one_file=False, path_files=paths)
+# csv_files = ["selected_homology_baseplate_protein.csv", "selected_homology_tail_protein.csv",  "selected_homology_tail_fiber_protein.csv", "selected_homology_tail_sheath_protein.csv"]
+#
+# get_fasta_from_prot_location(csv_files, all_in_one_file=False, path_files=paths)
