@@ -45,10 +45,8 @@ def select_genomes_no_prots(dataset, txt_files, add_to_file_name=None):
             write_id_file(file_name=f"{add_to_file_name}{k1}", info=v1)   
 
 
-txt_list = ["NEW_tail.txt", "NEW_baseplate_protein.txt", "NEW_tail_fiber_protein.txt", "NEW_tail_sheath_protein.txt"]
-# out_file_names = ["NO_tail_protein.txt", "NO_baseplate_protein.txt", "NO_tail_fiber_protein.txt", "NO_tail_sheath_protein.txt"]
+# txt_list = ["NEW_tail.txt", "NEW_baseplate_protein.txt", "NEW_tail_fiber_protein.txt", "NEW_tail_sheath_protein.txt"]
 
-
-select_genomes_no_prots("NEW_All_phages.csv", txt_list, add_to_file_name="NO_")
+# select_genomes_no_prots("NEW_All_phages.csv", txt_list, add_to_file_name="NO_")
 
             
