@@ -23,17 +23,14 @@ def alignment(dire, file, output_file):
 
 
 
-diretoria = r"/path/to/tool/clustalw2"
-# dir_file = r"/home/acinom/Desktop/Mestrado/Projeto_Bioinf/Code/Reduced_shit/REduced_sorted.fasta"
-# dir_file_out = r"/home/acinom/Desktop/Mestrado/Projeto_Bioinf/Code/Reduced_shit/REduced_sorted.fasta"
+# diretoria = r"/path/to/tool/clustalw2"
+#
+# dir_file = [r"/path/to/file/Fasta_baseplate.fasta", r"/path/to/file/Fasta_tail.fasta", r"/path/to/file/Fasta_tail_fiber.fasta", r"/path/to/file/Fasta_tail_sheath.fasta"]
+# out_file = ["Baseplate_aln", "Tail_aln", "Tail_fiber_aln", "Tail_sheath_aln"]
 
 
-dir_file = [r"/path/to/file/Fasta_baseplate.fasta", r"/path/to/file/Fasta_tail.fasta", r"/path/to/file/Fasta_tail_fiber.fasta", r"/path/to/file/Fasta_tail_sheath.fasta"]
-out_file = ["Baseplate_aln", "Tail_aln", "Tail_fiber_aln", "Tail_sheath_aln"]
-
-
-for i in range(len(dir_file)):
-    alignment(diretoria, dir_file[i], output_file=out_file[i])
+# for i in range(len(dir_file)):
+#     alignment(diretoria, dir_file[i], output_file=out_file[i])
 
 def read_aligment(file):
     """
@@ -53,20 +50,20 @@ def phylogeny(file):
     tree = Phylo.read(file, "newick")
     Phylo.draw_ascii(tree)
 
+#
+# aln_files = ["Fasta_tail.aln", "Fasta_tail_fiber.aln", "Fasta_tail_sheath.aln"]
+# dnd_files = ["Fasta_baseplate.dnd", "Fasta_tail.dnd", "Fasta_tail_fiber.dnd", "Fasta_tail_sheath.dnd"]
 
-aln_files = ["Fasta_tail.aln", "Fasta_tail_fiber.aln", "Fasta_tail_sheath.aln"]
-dnd_files = ["Fasta_baseplate.dnd", "Fasta_tail.dnd", "Fasta_tail_fiber.dnd", "Fasta_tail_sheath.dnd"]
-
-
-start_time = time.time()
+#
+# start_time = time.time()
 
 # for i in range(len(aln_files)):
 #     read_aligment(aln_files[i])
 
 # for j in range(len(dnd_files)):
 #     phylogeny(dnd_files[j])
-
-if __name__ == "__main__":
-    print("--- %s seconds ---" % (time.time() - start_time))
+#
+# if __name__ == "__main__":
+#     print("--- %s seconds ---" % (time.time() - start_time))
 
 
