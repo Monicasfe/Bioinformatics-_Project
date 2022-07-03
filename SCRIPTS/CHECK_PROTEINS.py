@@ -76,36 +76,23 @@ def check_proteins_in_dataset(dataset, proteins, phages_file, prots_counts, add_
     else:
         print("list is empty")
 
-# all_proteins = ["tail protein", "putative tail protein", "tail sheath protein","putative tail sheath protein", "tail fiber protein", "tail fiber", "putative tail fiber protein", "baseplate protein", "putative baseplate protein"]
 
-# baseplate = ["baseplate protein", "putative baseplate protein", "baseplate"]
+# baseplate = ["baseplate protein", "baseplate"]
 
-# tail_sheath =["tail sheath protein","putative tail sheath protein", "tail sheath"]
+# tail_sheath = ["tail sheath protein", "tail sheath"]
 
-# tail_fiber = ["tail fiber protein", "tail fiber", "putative tail fiber protein"]
+# tail_fiber = ["tail fiber protein", "tail fiber"]
 
-# tail =["tail protein", "putative tail protein"]
-
-baseplate = ["baseplate protein", "baseplate"]
-
-tail_sheath = ["tail sheath protein", "tail sheath"]
-
-tail_fiber = ["tail fiber protein", "tail fiber"]
-
-tail = ["tail protein"]
+# tail = ["tail protein"]
 
 
-# check_proteins_in_dataset("Duplicated_All_phages.csv", proteins)
-
-# all_searches = [all_proteins, baseplate, tail, tail_fiber, tail_sheath]
-
-all_searches = [baseplate, tail, tail_fiber, tail_sheath]
+# all_searches = [baseplate, tail, tail_fiber, tail_sheath]
 
 
-for i in all_searches:
-    if len(i) > 3:
-        check_proteins_in_dataset("NEW_All_phages.csv", i, "All_proteins", prots_counts=4)
-    else:
-        check_proteins_in_dataset("NEW_All_phages.csv", i, str(i[0]).replace(" ", "_"), prots_counts=1, add_to_file_name="NEW_NEW_")
+# for i in all_searches:
+    # if len(i) > 3:
+        # check_proteins_in_dataset("NEW_All_phages.csv", i, "All_proteins", prots_counts=4)
+    # else:
+        # check_proteins_in_dataset("NEW_All_phages.csv", i, str(i[0]).replace(" ", "_"), prots_counts=1, add_to_file_name="NEW_NEW_")
 
             
