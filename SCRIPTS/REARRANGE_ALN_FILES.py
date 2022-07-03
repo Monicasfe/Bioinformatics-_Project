@@ -39,8 +39,7 @@ def arrange_aln_files_to_fasta_style(aln_files, add_to_file_name=None, path_file
         print(len(aln_dict), len(np.unique(ids)), len(aln_dict.values()))
         print(aln_dict.keys())
 
-        # print(aln_dict)
-
+        sequences_aln = []
         for k, v in aln_dict.items():
             k = k.replace("_", "")
             sequences_aln.append(f">{k} \n{v} \n")
@@ -57,8 +56,8 @@ def arrange_aln_files_to_fasta_style(aln_files, add_to_file_name=None, path_file
                 write_file_txt_or_fasta(file_name=f"{file_name}", info=sequences_aln, file_extension=".aln")
 
 
-aln_files = ["Fasta_baseplate.aln", "Fasta_tail.aln", "Fasta_tail_fiber.aln", "Fasta_tail_sheath.aln"]
-
-paths_files = ["SNP/baseplate", "SNP/tail", "SNP/tail_fiber", "SNP/tail_sheath"]
-
-arrange_aln_files_to_fasta_style(aln_files=aln_files, add_to_file_name="Like_fasta_", path_files=paths_files)
+# aln_files = ["Fasta_baseplate.aln", "Fasta_tail.aln", "Fasta_tail_fiber.aln", "Fasta_tail_sheath.aln"]
+#
+# paths_files = ["SNP/baseplate", "SNP/tail", "SNP/tail_fiber", "SNP/tail_sheath"]
+#
+# arrange_aln_files_to_fasta_style(aln_files=aln_files, add_to_file_name="Like_fasta_", path_files=paths_files)
