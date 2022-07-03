@@ -6,11 +6,9 @@ import http.client
 http.client.HTTPConnection._http_vsn = 10
 http.client.HTTPConnection._http_vsn_str = 'HTTP/1.0'
 
-txt_files = ["NEW_tail_protein.txt", "NEW_baseplate_protein.txt", "NEW_tail_fiber_protein.txt", "NEW_tail_sheath_protein.txt"]
-
-prots_names = [["tail", "tail protein"], ["baseplate", "baseplate protein"], ["tail fiber", "tail fiber protein"], ["tail sheath", "tail sheath protein"]]
-
-
+# txt_files = ["NEW_tail_protein.txt", "NEW_baseplate_protein.txt", "NEW_tail_fiber_protein.txt", "NEW_tail_sheath_protein.txt"]
+#
+# prots_names = [["tail", "tail protein"], ["baseplate", "baseplate protein"], ["tail fiber", "tail fiber protein"], ["tail sheath", "tail sheath protein"]]
 
 def get_proteins_ids(txt_files, searching_protein, seach_from_list=False, add_to_file_name=None):
     """
@@ -95,7 +93,7 @@ def get_proteins_ids(txt_files, searching_protein, seach_from_list=False, add_to
             write_id_file(f"{k}",proteins_ids)
         i += 1
 
-get_proteins_ids(txt_files=txt_files, searching_protein=prots_names, seach_from_list=True, add_to_file_name="NEW_NEW_prots_ids_")
+# get_proteins_ids(txt_files=txt_files, searching_protein=prots_names, seach_from_list=True, add_to_file_name="NEW_NEW_prots_ids_")
 
 
 def get_proteins_sequences(txt_files, add_to_file_name=None):
@@ -141,8 +139,6 @@ def get_proteins_sequences(txt_files, add_to_file_name=None):
             write_file_txt_or_fasta(f"{add_to_file_name}{k}", proteins_sequences, file_extension=".fasta")
         else: 
             write_file_txt_or_fasta(f"{k}", proteins_sequences, file_extension=".fasta")          
-
-# get_proteins_sequences(txt_files=txt_file_names, add_to_file_name="hypothetical_ports_sequences_")
 
 
 def one_by_one_get_proteins_sequences(txt_files, add_to_file_name=None):
