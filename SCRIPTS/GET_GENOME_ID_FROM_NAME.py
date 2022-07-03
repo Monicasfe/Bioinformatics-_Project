@@ -47,10 +47,8 @@ def get_genome_id_from_name(dataset, csv_name_files, add_to_file_name):
         else: 
             write_id_file(f"{file_name}", lines_info)
 
-
-
-
-name_files = ["selected_homology_baseplate_proteins.csv", "selected_homology_tail_fiber_proteins.csv", "selected_homology_tail_proteins.csv", "selected_homology_tail_sheath_proteins.csv"]
-
-
-get_genome_id_from_name("NEW_All_phages.csv", csv_name_files=name_files, add_to_file_name="id_name_homology_")
+#
+# name_files = ["selected_homology_baseplate_proteins.csv", "selected_homology_tail_fiber_proteins.csv", "selected_homology_tail_proteins.csv", "selected_homology_tail_sheath_proteins.csv"]
+#
+#
+# get_genome_id_from_name("NEW_All_phages.csv", csv_name_files=name_files, add_to_file_name="id_name_homology_")
