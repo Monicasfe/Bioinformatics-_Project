@@ -1,4 +1,4 @@
-from Defs_Auxiliares import write_id_file
+from SCRIPTS.AUXLILIARY_FUNCTIONS.GENERAL_AUX_FUNCTIONS import write_id_file
 import vcf
 
 
@@ -17,4 +17,3 @@ for record in vcf_reader:
 print(len(mutation_type))
 
 write_id_file(file_name="pyvcf_snp_baseplate", info=mutation_type, path="SNP/baseplate/PyVCF")
-# print(len(snp_info))
