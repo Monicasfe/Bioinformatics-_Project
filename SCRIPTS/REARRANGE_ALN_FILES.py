@@ -4,10 +4,10 @@ from SCRIPTS.AUXLILIARY_FUNCTIONS.GENERAL_AUX_FUNCTIONS import *
 
 def arrange_aln_files_to_fasta_style(aln_files, add_to_file_name=None, path_files=None):
     """
-    Converts an alignment file sln structure to on alignment file with the stucture of a fasta file.
+    Converts an alignment file sln structure to on alignment file with the structure of a fasta file.
     :param aln_files: list with the aln files to convert.
     :param add_to_file_name: prefix to add to the output file name.
-    :param path_files: path to wher eteh output files should be saved, By default is None, meaning that the output file will be saved in te corrent folder
+    :param path_files: path to where the output files should be saved. By default is None, meaning that the output file will be saved in te corrent folder
     :return:
     """
     
@@ -40,8 +40,6 @@ def arrange_aln_files_to_fasta_style(aln_files, add_to_file_name=None, path_file
         print(aln_dict.keys())
 
         # print(aln_dict)
-
-        sequences_aln = []
 
         for k, v in aln_dict.items():
             k = k.replace("_", "")
