@@ -4,7 +4,7 @@ This repository contains the source code and the results from my Bioinformatics 
 
 In here it possible to find fucntions that allow to:
 
-  __-->__ Generate staphylococcus pahges datasets in _.csv_ format (however these functions can be changed in order to generate datasets for other organims). 
+  __-->__ Generate staphylococcus phages datasets in _.csv_ format (however these functions can be changed in order to generate datasets for other organims). 
   
   __-->__ Find specific proteins inside the genome and generate _.txt_ files conatining the genomes with the wanted proteins.
   
